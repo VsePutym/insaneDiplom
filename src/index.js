@@ -1,0 +1,50 @@
+/* eslint-disable eol-last */
+import '@styles/style.css';
+import accordion from './modules/accordion';
+import toggleMenu from './modules/toggleMenu';
+import scrollWindow from './modules/scrollWindow';
+import popup from './modules/popup';
+import validPhone from './modules/validPhone';
+import prompt from './modules/prompt';
+import sliderPrompt from './modules/sliderPrompt';
+import runTypesRepair from './modules/typesRepairSlider';
+import sendForm from './modules/sendForm';
+import sliderPortfolio from './modules/sliderPortfolio';
+import popupSliderPortfolio from './modules/popupSliderPortfolio';
+import documents from './modules/documents';
+import designStyle from './modules/style';
+import sliderDesignsPopup from './modules/sliderDesignsPopup';
+import reviews from './modules/reviews';
+import scheme from './modules/scheme';
+import partnery from './modules/partnery';
+import accordionCost from './modules/accordionCost';
+// import design from './modules/design';
+
+window.onload = () => {
+    const body = document.querySelector('.preload');
+    body.classList.remove('preload');
+};
+
+accordion();
+toggleMenu();
+scrollWindow();
+popup();
+validPhone();
+prompt();
+sliderPrompt();
+runTypesRepair.activeType();
+runTypesRepair.arrowStart();
+sendForm();
+sliderPortfolio();
+popupSliderPortfolio.showSlide();
+documents();
+designStyle.choiceStyle();
+designStyle.showPreview();
+sliderDesignsPopup();
+reviews();
+scheme.getNavDesctop();
+scheme.mobile();
+partnery.getNewElem();
+accordionCost();
+// design.getNavMenu();
+// design.navMenuMobile();
